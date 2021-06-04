@@ -135,11 +135,28 @@
 /* Index CSS */
 
 .home-hero{
-    margin-top: 40px;
+    
+    margin-top: 4rem;
     max-width: 100%;
     justify-content: center;
-    margin-left: 3rem;
+
 }
+
+
+.whitebox{
+    background-color: white;
+    width: 100rem;
+    height: 25rem;
+    margin-top: 5rem;
+
+    justify-content: center;
+}
+/* .box{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+} */
+
 
 
 
