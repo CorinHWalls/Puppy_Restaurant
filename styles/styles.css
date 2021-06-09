@@ -4,15 +4,18 @@
     box-sizing: border-box;
 }
 
+body{
+    width: 100%;
+}
 
 /* Nav and Background */
 .bg-image{
     background-image: url(/assets/bgtexture.jpg);
+    
 }
 
 
 .logo-area{
-    margin-left: 50px;
     position: absolute;
 }
 
@@ -25,6 +28,7 @@
     
 }
 .menulist li{
+    font-family: 'Fugaz One', regular;
     font-size: 18px;
     font-weight: bold;
     position: relative;
@@ -104,6 +108,7 @@
         transition: 0.5s;
         right: -100%;
         cursor: pointer;
+        
     }
     .ham-menu{
         display: block;
@@ -161,10 +166,7 @@
     background-color: white;
     height: 25rem;
     margin-top: 5rem;
-    font-family: 'Montauk-regular';
-    color: #5F002B;
     padding-left: 5px;
-
 }
 
 .whitebox-title{
@@ -172,7 +174,16 @@
     color: #5F002B;
 }
 
+.home-text{
+    font-family: 'Montauk-regular';
+    color: #5F002B;
+}
 
+.flex-end{
+    flex-direction: row-reverse; 
+    padding-bottom: 1rem;
+    
+}
 
 .whitebox-img{
     
@@ -183,7 +194,7 @@
 }
 
 .box{
-    margin-top: 5rem;
+    margin-top: 4rem;
     display: flex;
     
 }
