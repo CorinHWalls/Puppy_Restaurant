@@ -172,9 +172,9 @@ body{
 
 
 .whitebox{
-    background-color: white;
+    background-color: rgb(194, 191, 191);
     height: 17rem;
-    margin-top: 5rem;
+    margin-top: 5rem; 
     padding-left: 5px;
 
 }
@@ -219,13 +219,20 @@ body{
     background-repeat: no-repeat;
 } */
 
-.box{
+/* .box{
     margin-top: 4rem;
     display: flex;
     
 }
 
+#homeSingleImg{
+    background-image: url(/assets/homeSingle.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 55vh;
+    
 
+}
 
 
 #catering-img1{
