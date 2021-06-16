@@ -172,19 +172,14 @@ body{
 
 
 .whitebox{
-    background-color: rgb(194, 191, 191);
+    background-color: rgb(255, 255, 255);
     height: 17rem;
     margin-top: 5rem; 
     padding-left: 5px;
 
 }
 
-.catering-Whitebox{
-    background-color: white;
-    height: 5rem;
-    margin-top: 5rem;
-    padding-left: 5px;
-}
+
 
 .whitebox-title{
     font-family: 'Fugaz One', cursive;
@@ -213,28 +208,12 @@ body{
     margin: 0%;
 }
 
-/* #index-img1{
-    background-image: url(/assets/homeSingle.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
-
-/* .box{
-    margin-top: 4rem;
-    display: flex;
-    
-}
-
-#homeSingleImg{
-    background-image: url(/assets/homeSingle.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 55vh;
-    
-
-}
 
 
+
+
+
+/* Catering css */
 #catering-img1{
     background-image: url(/assets/cateringHero.jpg);
     background-size: cover;
@@ -242,6 +221,24 @@ body{
     height: 30rem;
 }
 
+.catering-Whitebox{
+    background-color: white;
+    height: 3rem;
+    /* margin-top: 5rem; */
+    /* padding-left: 5px; */
+}
+
+#catering-title1{
+    size: 50px;
+    font-family: 'Fugaz One', cursive;
+    color: #5F002B;
+}
+
+.catering-imgs{
+    
+    width: 20rem;
+    height: 20rem;
+}
 
 
  
