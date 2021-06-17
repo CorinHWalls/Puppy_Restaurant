@@ -2,7 +2,40 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Montauk;
 }
+
+/* @font-face {
+    font-family: Montauk;
+    src: url(/assets/Montauk-Regular.otf) format("opentype");
+}
+
+@font-face {
+    font-family: Montauk-Bold;
+    font-weight: bold;
+    src: url(/assets/Montauk-Bold.otf) format("opentype");
+}
+
+@font-face {
+    font-family: Montauk-Light;
+    font-weight: lighter;
+    src: url(/assets/Montauk-Light.otf) format("opentype");
+}
+
+@font-face {
+    font-family: Montauk-Italic;
+    font-style: italic;
+    src: url(/assets/Montauk-Italic.otf) format("opentype");
+}
+     */
+h1 {
+    font-family:  Montauk-Italic;
+    font-weight:normal;
+    font-style:normal;
+    font-weight: bold;
+    margin-top:15px !important;
+}
+
 
 
 /* Nav and Background */
@@ -32,17 +65,18 @@
 }
 .menulist li a{
     text-decoration: none;
+    font-family: Montauk-Italic;
     color: #5F002B;
 }
 .check{
     right: 0;
     height: 40px;
-    width: 40px;
     position: absolute;
+    width: 40px;
     margin: 3px 20px 0px 0px;
-    z-index: 3;
+    z-index: 999999 !important;
     opacity: 0;
-
+    top: 0;
 }
 .ham-menu{
     float: right;
@@ -131,8 +165,78 @@
         }
 }
 /* End of Nav & background */
+/* Start of the About Style Sheet*/
+.story-box{
+    background-color: #FFFFFF;
+    color: #5F002B;
+}
+
+.story-container{
+    padding-top: 100px;
+    max-width: 1200px;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin: 0 auto !important;
+}
+
+.our-team{
+    background-color: #FFFFFF;
+    margin-top: 50px !important;
+    text-align: center;
+    padding-bottom: 0 !important;
+    margin-bottom: 20px !important;
+    padding: 10px;
+}
 
 
+/* h4{
+    font-family:  Montauk-Italic;
+    font-weight:normal;
+    font-style:normal;
+    font-weight: bold;
+    color: #5F002B;
+} */
 
+.card{
+    border: none !important;
+    width: 400px;
+    display: inline-block;
 
- 
+}
+/* .about-cd{
+    display: inline-block !important;
+   border-spacing: 10px;
+} */
+/* .george{
+    justify-self: start;
+    margin-right: 10px;
+}
+.louie{
+    margin-left: 10px;
+} */
+
+/* Start of bottom copyright section of the about page */
+.copyright-bimg{
+    text-align: right;
+}
+
+/* This is the css for menu page */
+.wmenu-bar{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: 'Fugaz One', cursive;
+    color: #5F002B;
+    font-size: 50px;
+    background-color: #FFFFFF;
+    font-family: 'Fugaz One', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 73px;
+
+}

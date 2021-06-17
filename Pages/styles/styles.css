@@ -1,0 +1,197 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* Nav and Background */
+.bg-image{
+    background-image: url(/assets/bgtexture.jpg);
+}
+
+
+.logo-area{
+    margin-left: 50px;
+    position: absolute;
+}
+
+.menulist {
+    float: right;
+    list-style: none;
+    margin-right: 10px;
+    position: relative;
+    display: flex;
+    
+}
+.menulist li{
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    margin: 10px;
+}
+.menulist li a{
+    text-decoration: none;
+    color: #5F002B;
+}
+.check{
+    right: 0;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    margin: 3px 20px 0px 0px;
+    z-index: 3;
+    opacity: 0;
+
+}
+.ham-menu{
+    float: right;
+    height: 40px;
+    width: 40px;
+    margin: 20px 20px 0px 0px;
+    position: relative;
+    display: none;
+    border: 2px solid #5F002B;
+}
+.menuline {
+    background:#5F002B;
+    height: 2px;
+    width: 25px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    top: 50%;
+}
+.menuline::before {
+    content:'';
+    position: absolute;
+    background:#5F002B;
+    height: 2px;
+    width: 25px;
+    top: -8px;
+}
+.menuline::after {
+    content:'';
+    position: absolute;
+    background:#5F002B;
+    height: 2px;
+    width: 25px;
+    top: 8px;
+}
+.content-area{
+    height: 1000px;
+    width: 100%;
+    text-align: center;
+}
+.content{
+    height: 500px;
+    transform: translateY(50%);
+    font-size: 30px;
+}
+ @media only screen and (max-width:680px){
+    header{
+        position: fixed;
+    }
+    .menulist{
+        position:fixed;
+        background-image: url(/assets/bgtexture.jpg);
+        width: 100%;
+        height: 100%;
+        margin-right: 0px;
+        top: 100px;
+        padding-top: 50px;
+        text-align: center;
+        transition: 0.5s;
+        right: -100%;
+        cursor: pointer;
+    }
+    .ham-menu{
+        display: block;
+        cursor: pointer;
+    }
+    .menulist {
+        display: block;
+        margin-right: 0px;
+        }
+    .menulist li a{
+            font-size: 22px;
+            text-align: center;
+                }
+    .check:checked ~ .menulist{
+        right: 0;
+        }
+        
+        .check:checked ~ .ham-menu .menuline{
+            transform: rotate(135deg);
+            transition: 0.3s ease;
+        }
+        .check:checked ~ .ham-menu .menuline::before,.check:checked ~ .ham-menu .menuline::after{
+            top: 0;
+            transform: rotate(90deg);
+        }
+}
+/* End of Nav & background */
+
+/* Index CSS */
+
+.home-hero{
+    
+    margin-top: 4rem;
+    max-width: 100%;
+    justify-content: center;
+
+}
+
+@font-face{
+    font-family: 'Montauk-Regular';
+    src: url("../assets/Montauk-regular.otf");
+
+    font-family: 'Montauk-Light';
+    src: url("../assets/Montauk-Light.otf");
+
+    font-family: 'Montauk-Italic';
+    src: url("../assets/Montauk-Italic.otf");
+
+    font-family: 'Montauk-Bold';
+    src: url("../assets/Montauk-Bold.otf");
+}
+
+
+.whitebox{
+    background-color: white;
+    height: 25rem;
+    margin-top: 5rem;
+    font-family: 'Montauk-regular';
+    color: #5F002B;
+    padding-left: 5px;
+
+}
+
+.whitebox-title{
+    font-family: 'Fugaz One', cursive;
+    color: #5F002B;
+}
+
+
+
+.whitebox-img{
+    
+    background-image: url(/assets/HomeImage.jpg);
+    background-size: cover;
+
+}
+
+.box{
+    margin-top: 5rem;
+    display: flex;
+    
+}
+
+
+
+
+
+
+
+
+ 
