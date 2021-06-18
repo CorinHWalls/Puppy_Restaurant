@@ -1,276 +1,367 @@
-*, ::after, ::before {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+*,
+::after,
+::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Montauk;
 }
 
-body{
-    width: 100%;
-    font-family: MontaukRegular;
+body {
+  width: 100%;
+  font-family: MontaukRegular;
 }
 
-img{
-    vertical-align: middle;
-    border-style: none;
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+/* @font-face {
+    font-family: Montauk;
+    src: url(/assets/Montauk-Regular.otf) format("opentype");
+}
+
+@font-face {
+    font-family: Montauk-Bold;
+    font-weight: bold;
+    src: url(/assets/Montauk-Bold.otf) format("opentype");
+}
+
+@font-face {
+    font-family: Montauk-Light;
+    font-weight: lighter;
+    src: url(/assets/Montauk-Light.otf) format("opentype");
+}
+
+@font-face {
+    font-family: Montauk-Italic;
+    font-style: italic;
+    src: url(/assets/Montauk-Italic.otf) format("opentype");
+}
+     */
+h1 {
+  font-family: Montauk-Italic;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 15px !important;
 }
 
 /* Nav and Background */
-.bg-image{
-    background-image: url(/assets/bgtexture.jpg);
-    
+.bg-image {
+  background-image: url(/assets/bgtexture.jpg);
 }
 
-
-.logo-area{
-    position: absolute;
-    margin-left: 5rem;
+.logo-area {
+  position: absolute;
+  margin-left: 5rem;
 }
 
-.p-l{
-    padding-left: 5rem;
+.p-l {
+  padding-left: 5rem;
 }
 
-.p-r{
-    padding-right: 5rem;
+.p-r {
+  padding-right: 5rem;
 }
 
-.pl-4, .px-4{
-    padding-left: 1.4rem!important;
+.pl-4,
+.px-4 {
+  padding-left: 1.4rem !important;
 }
 
-.pb-5, .py-5{
-    padding-bottom: 3rem!important;
+.pb-5,
+.py-5 {
+  padding-bottom: 3rem !important;
 }
 
-.mb-0, .my-0{
-    margin-bottom: 0!important;
+.mb-0,
+.my-0 {
+  margin-bottom: 0 !important;
 }
 
-
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.mt-5, .my-5{
-    margin-top: 3rem!important;
+.mt-5,
+.my-5 {
+  margin-top: 3rem !important;
 }
-
-
 
 .menulist {
-    float: right;
-    list-style: none;
-    margin-right: 10px;
-    position: relative;
-    display: flex;
-    
+  float: right;
+  list-style: none;
+  margin-right: 10px;
+  position: relative;
+  display: flex;
 }
-.menulist li{
-    font-family: 'Fugaz One', regular;
-    font-size: 18px;
-    font-weight: bold;
-    position: relative;
-    margin: 10px;
+.menulist li {
+  font-family: "Fugaz One", regular;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  margin: 10px;
 }
-.menulist li a{
-    text-decoration: none;
-    color: #5F002B;
+.menulist li a {
+  text-decoration: none;
+  font-family: Montauk-Italic;
+  color: #5f002b;
 }
-.check{
-    right: 0;
-    height: 40px;
-    width: 40px;
-    position: absolute;
-    margin: 3px 20px 0px 0px;
-    z-index: 3;
-    opacity: 0;
-
+.check {
+  right: 0;
+  height: 40px;
+  position: absolute;
+  width: 40px;
+  margin: 3px 20px 0px 0px;
+  z-index: 999999 !important;
+  opacity: 0;
+  top: 0;
 }
-.ham-menu{
-    float: right;
-    height: 40px;
-    width: 40px;
-    margin: 20px 20px 0px 0px;
-    position: relative;
-    display: none;
-    border: 2px solid #5F002B;
+.ham-menu {
+  float: right;
+  height: 40px;
+  width: 40px;
+  margin: 20px 20px 0px 0px;
+  position: relative;
+  display: none;
+  border: 2px solid #5f002b;
 }
 .menuline {
-    background:#5F002B;
-    height: 2px;
-    width: 25px;
-    position: relative;
-    margin: auto;
-    display: flex;
-    top: 50%;
+  background: #5f002b;
+  height: 2px;
+  width: 25px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  top: 50%;
 }
 .menuline::before {
-    content:'';
-    position: absolute;
-    background:#5F002B;
-    height: 2px;
-    width: 25px;
-    top: -8px;
+  content: "";
+  position: absolute;
+  background: #5f002b;
+  height: 2px;
+  width: 25px;
+  top: -8px;
 }
 .menuline::after {
-    content:'';
-    position: absolute;
-    background:#5F002B;
-    height: 2px;
-    width: 25px;
-    top: 8px;
+  content: "";
+  position: absolute;
+  background: #5f002b;
+  height: 2px;
+  width: 25px;
+  top: 8px;
 }
-.content-area{
-    height: 1000px;
+.content-area {
+  height: 1000px;
+  width: 100%;
+  text-align: center;
+}
+.content {
+  height: 500px;
+  transform: translateY(50%);
+  font-size: 30px;
+}
+@media only screen and (max-width: 680px) {
+  header {
+    position: fixed;
+  }
+  .menulist {
+    position: fixed;
+    background-image: url(/assets/bgtexture.jpg);
     width: 100%;
+    height: 100%;
+    margin-right: 0px;
+    top: 100px;
+    padding-top: 50px;
     text-align: center;
-}
-.content{
-    height: 500px;
-    transform: translateY(50%);
-    font-size: 30px;
-}
- @media only screen and (max-width:680px){
-    header{
-        position: fixed;
-    }
-    .menulist{
-        position:fixed;
-        background-image: url(/assets/bgtexture.jpg);
-        width: 100%;
-        height: 100%;
-        margin-right: 0px;
-        top: 100px;
-        padding-top: 50px;
-        text-align: center;
-        transition: 0.5s;
-        right: -100%;
-        cursor: pointer;
-        
-    }
-    .ham-menu{
-        display: block;
-        cursor: pointer;
-    }
-    .menulist {
-        display: block;
-        margin-right: 0px;
-        }
-    .menulist li a{
-            font-size: 22px;
-            text-align: center;
-                }
-    .check:checked ~ .menulist{
-        right: 0;
-        }
-        
-        .check:checked ~ .ham-menu .menuline{
-            transform: rotate(135deg);
-            transition: 0.3s ease;
-        }
-        .check:checked ~ .ham-menu .menuline::before,.check:checked ~ .ham-menu .menuline::after{
-            top: 0;
-            transform: rotate(90deg);
-        }
+    transition: 0.5s;
+    right: -100%;
+    cursor: pointer;
+  }
+  .ham-menu {
+    display: block;
+    cursor: pointer;
+  }
+  .menulist {
+    display: block;
+    margin-right: 0px;
+  }
+  .menulist li a {
+    font-size: 22px;
+    text-align: center;
+  }
+  .check:checked ~ .menulist {
+    right: 0;
+  }
+
+  .check:checked ~ .ham-menu .menuline {
+    transform: rotate(135deg);
+    transition: 0.3s ease;
+  }
+  .check:checked ~ .ham-menu .menuline::before,
+  .check:checked ~ .ham-menu .menuline::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
 }
 /* End of Nav & background */
+/* Start of the About Style Sheet*/
+.story-box {
+  background-color: #ffffff;
+  color: #5f002b;
+}
 
 /* Index CSS */
 
-.home-hero{
-    
-    margin-top: 4rem;
-    max-width: 100%;
-    justify-content: center;
-
+.home-hero {
+  margin-top: 4rem;
+  max-width: 100%;
+  justify-content: center;
 }
 
-@font-face{
-    font-family: 'Montauk-Regular';
-    src: url("../assets/Montauk-regular.otf");
+@font-face {
+  font-family: "Montauk-Regular";
+  src: url("../assets/Montauk-regular.otf");
 
-    font-family: 'Montauk-Light';
-    src: url("../assets/Montauk-Light.otf");
+  font-family: "Montauk-Light";
+  src: url("../assets/Montauk-Light.otf");
 
-    font-family: 'Montauk-Italic';
-    src: url("../assets/Montauk-Italic.otf");
+  font-family: "Montauk-Italic";
+  src: url("../assets/Montauk-Italic.otf");
 
-    font-family: 'Montauk-Bold';
-    src: url("../assets/Montauk-Bold.otf");
+  font-family: "Montauk-Bold";
+  src: url("../assets/Montauk-Bold.otf");
+}
+.story-container {
+  padding-top: 100px;
+  max-width: 1200px;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  margin: 0 auto !important;
 }
 
-
-.corinHomeTitle{
-    font-family: 'Fugaz One', cursive;
-    color: #5F002B;
+.our-team {
+  background-color: #ffffff;
+  margin-top: 50px !important;
+  text-align: center;
+  padding-bottom: 0 !important;
+  margin-bottom: 20px !important;
+  padding: 10px;
 }
 
-.home-text{
-    font-family: 'Montauk-regular';
-    color: #5F002B;
+.corinHomeTitle {
+  font-family: "Fugaz One", cursive;
+  color: #5f002b;
 }
 
-.flex-end{
-    flex-direction: row-reverse; 
-    padding-bottom: 1rem;
-    
+.home-text {
+  font-family: "Montauk-regular";
+  color: #5f002b;
 }
 
-#index-img2{
-    
-    background-image: url(/assets/HomeImage.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 250px;
-    width: 80rem;
-    padding: 0%;
-    margin: 0%;
+.flex-end {
+  flex-direction: row-reverse;
+  padding-bottom: 1rem;
 }
 
-.noMar{
-    margin: 0%;
+#index-img2 {
+  background-image: url(/assets/HomeImage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+  width: 80rem;
+  padding: 0%;
+  margin: 0%;
 }
 
-.corinMarBtm{
-   margin-top: 80px; 
+.noMar {
+  margin: 0%;
 }
 
-
-
-
+.corinMarBtm {
+  margin-top: 80px;
+}
 
 /* Catering css */
-#catering-img1{
-    background-image: url(/assets/cateringHero.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 30rem;
+#catering-img1 {
+  background-image: url(/assets/cateringHero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30rem;
 }
 
-.catering-title{
-    font-size: 30px;
+.catering-title {
+  font-size: 30px;
+  color: #5f002b;
+  line-height: 44px;
+  font-family: "Fugaz One", cursive;
+  background-color: white;
+  margin-bottom: 0px;
+  padding-top: 15px;
+}
+
+.catering-text {
+  font-size: 20px;
+  color: #5f002b;
+  line-height: 22px;
+  background-color: white;
+  padding: 3%;
+}
+
+.caterHeroImg {
+  width: 100%;
+  height: 100%;
+}
+
+/* h4{
+    font-family:  Montauk-Italic;
+    font-weight:normal;
+    font-style:normal;
+    font-weight: bold;
     color: #5F002B;
-    line-height: 44px;
-    font-family: 'Fugaz One', cursive;
-    background-color: white;
-    margin-bottom: 0px;
-    padding-top: 15px;
+} */
+
+.card {
+  border: none !important;
+  width: 400px;
+  display: inline-block;
+}
+/* .about-cd{
+    display: inline-block !important;
+   border-spacing: 10px;
+} */
+/* .george{
+    justify-self: start;
+    margin-right: 10px;
+}
+.louie{
+    margin-left: 10px;
+} */
+
+/* Start of bottom copyright section of the about page */
+.copyright-bimg {
+  text-align: right;
 }
 
-.catering-text{
-    font-size: 20px;
-    color: #5F002B;
-    line-height: 22px;
-    background-color: white;
-    padding: 3%;
+/* This is the css for menu page */
+.wmenu-bar {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  font-family: "Fugaz One", cursive;
+  color: #5f002b;
+  font-size: 50px;
+  background-color: #ffffff;
+  font-family: "Fugaz One", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 73px;
 }
-
-.caterHeroImg{
-    width: 100%;
-    height: 100%;
-}
-
-
- 
