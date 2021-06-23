@@ -46,13 +46,6 @@ img {
 
 /* Do not target h1 like this because it targets all h1 on every page */
 
-/* h1 {
-  font-family: Montauk-Italic;
-  font-weight: normal;
-  font-style: normal;
-  font-weight: bold;
-  margin-top: 15px !important;
-} */
 
 /* Nav and Background */
 .bg-image {
@@ -147,14 +140,6 @@ img {
 
 
 /* Do not target h1 like this because it targets all h1 on every page */
-
-/* h1 {
-  font-family: Montauk-Italic;
-  font-weight: normal;
-  font-style: normal;
-  font-weight: bold;
-  margin-top: 15px !important;
-} */
 
 /* Nav and Background */
 .bg-image {
@@ -325,37 +310,6 @@ img {
 }
 
 
-
-
-/* h4{
-    font-family:  Montauk-Italic;
-    font-weight:normal;
-    font-style:normal;
-    font-weight: bold;
-    color: #5F002B;
-} */
-
-/* I am using cards to so you have to make custom for your page */
-
-/* .card {
-  border: none !important;
-  width: 400px;
-  display: inline-block;
-} */
-
-
-/* .about-cd{
-    display: inline-block !important;
-   border-spacing: 10px;
-} */
-/* .george{
-    justify-self: start;
-    margin-right: 10px;
-}
-.louie{
-    margin-left: 10px;
-} */
-
 /* Start of bottom copyright section of the about page */
 .copyright-bimg {
   text-align: right;
@@ -437,13 +391,6 @@ img {
 
 /* Do not target h1 like this because it targets all h1 on every page */
 
-/* h1 {
-  font-family: Montauk-Italic;
-  font-weight: normal;
-  font-style: normal;
-  font-weight: bold;
-  margin-top: 15px !important;
-} */
 
 /* Nav and Background */
 .bg-image {
@@ -901,56 +848,6 @@ background-color: #FFFFFF;
     margin-bottom: 0px;
     padding-top: 15px;
 }
-
-/* h4{
-    font-family:  Montauk-Italic;
-    font-weight:normal;
-    font-style:normal;
-    font-weight: bold;
-    color: #5F002B;
-} */
-
-/* I am using cards to so you have to make custom for your page */
-
-/* .card {
-  border: none !important;
-  width: 400px;
-  display: inline-block;
-} */
-
-
-
-
-
-/* h4{
-    font-family:  Montauk-Italic;
-    font-weight:normal;
-    font-style:normal;
-    font-weight: bold;
-    color: #5F002B;
-} */
-
-/* I am using cards to so you have to make custom for your page */
-
-/* .card {
-  border: none !important;
-  width: 400px;
-  display: inline-block;
-} */
-
-
-
-/* .about-cd{
-    display: inline-block !important;
-   border-spacing: 10px;
-} */
-/* .george{
-    justify-self: start;
-    margin-right: 10px;
-}
-.louie{
-    margin-left: 10px;
-} */
 
 /* Start of bottom copyright section of the about page */
 .copyright-bimg {
