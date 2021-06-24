@@ -67,26 +67,9 @@ img{
     display: flex;
     
 }
-.menulist li{
-    font-family: 'Fugaz One', regular;
-    font-size: 18px;
-    font-weight: bold;
-    position: relative;
-    margin: 10px;
-}
-.menulist li a{
-    text-decoration: none;
-    color: #5F002B;
-}
-.check{
-    right: 0;
-    height: 40px;
-    width: 40px;
-    position: absolute;
-    margin: 3px 20px 0px 0px;
-    z-index: 3;
-    opacity: 0;
 
+.linkPadding{
+  padding-right: 3%;
 }
 .ham-menu{
     float: right;
