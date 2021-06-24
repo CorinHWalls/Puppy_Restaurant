@@ -16,44 +16,54 @@
   <body class="bg-image">
 
 
-      <!-- Navbar -->
-      <div class="container-fluid">
+       <!-- Nav -->
+ <div class="container-fluid">
+  <nav class="navbar navbar-expand-md navbar-light headingPadding">
+    <a class="navbar-brand" href="../index.html">
+      <img src="../assets/MuzzlesLogo.png"  alt="Muzzles Logo!">
+    </a>
 
+    <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#toggleMobileMenu"
+    aria-controls="toggleMobileMenu"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    
+    >
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse linkPadding " id="toggleMobileMenu">
+      <ul class="corinnav navbar ms-auto text-center">
+        <li>
+          <a class="nav-link corinnav ml-4" href="../pages/about.html">About</a>
+        </li>
+        <li>
+          <a class="nav-link corinnav ml-4" href="../pages/menu.html">Menu</a>
+        </li>
+        <li>
+          <a class="nav-link corinnav ml-4" href="../pages/catering.html">Catering</a>
+        </li>
+        <li>
+          <a class="nav-link corinnav ml-4" href="../pages/photos.html">Photo</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<!-- Nav -->
+      
+      
+      <div class="container-fluid pt-4" style="max-width: 82%";>
+        <!-- Title -->
         <div class="row">
-          <div class=" col-md-7 col-lg-4">
-            <div class="logo-area">
-              <a href="../index.html"
-                ><img src="../assets/MuzzlesLogo.png" class="img-fluid" alt="A logo of Muzzles with a dogpaw"
-              /></a>
-            </div>
-          </div>
-  
-          <div class="col-md-4 col-lg-8">
-            <nav class="pt-4">
-              <input class="check" type="checkbox" />
-              <div class="ham-menu">
-                <div class="menuline"></div>
-              </div>
-              <ul class="menulist">
-                <li><a href="../Pages/about.html">About</a></li>
-                <li><a href="../Pages/menu.html">Menu</a></li>
-                <li><a href="../Pages/catering.html">Catering</a></li>
-                <li><a href="../Pages/photos.html">Photos</a></li>
-              </ul>
-            </nav>
+          <div class="col catering-mainTitle d-flex justify-content-center">
+            <h1>Catering</h1>
           </div>
         </div>
       </div>
-      <!-- Navbar -->
-      
-      
-      <div class="container-fluid pt-4" style="max-width: 90%";>
-        <!-- Title -->
-        <div class="row">
-          <div class="col catering-title d-flex justify-content-center">
-            <h1 id="catering-title1">Catering</h1>
-          </div>
-        </div>
         
       <!-- Hero img -->
       <div class="container-fluid ">
@@ -72,13 +82,13 @@
   <div class="row  center mt-5">
 
 
-    <div class="col-xl-4 col-lg-10 col-md-10 col-sm-10 ">
+    <div class="col-xl-4 col-lg-10 col-md-10 col-sm-10 pl-3 ">
       
       <img src="../assets/cateringMaine.jpg" height="506px" width="100%" alt="Table with various dishes including pie and tomatos that are filled in with cheese">
     </div>
 
     <div class="col-xl-6 col-lg-10 col-md-10 col-sm-10 ">
-      <h2 class="catering-title  pl-4 ">Our Catering Services</h2>
+      <h2 class="catering-title aboutRed pl-4 ">Our Catering Services</h2>
       <p class="catering-text pl-4 pb-5 mb-0">Morbi tempus iaculis urna id. Aenean pharetra magna ac placerat. Mi proin sed
         libero enim sed faucibus turpis in.
         Et ultrices neque ornare aenean euismod. Quisque sagittis purus sit amet. Ultricies tristique nulla aliquet
