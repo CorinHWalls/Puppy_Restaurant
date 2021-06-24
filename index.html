@@ -29,38 +29,48 @@
   <body class="bg-image">
     
     <!-- Navbar -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-7 col-lg-4">
-          <div class="logo-area">
-            <a href="../index.html"
-              ><img src="../assets/MuzzlesLogo.png" class="img-fluid" alt="A logo of Muzzles with a dogpaw"
-            /></a>
-          </div>
-        </div>
 
-        <div class="col-md-3 col-lg-8">
-          <nav class="pt-4">
-            <input class="check" type="checkbox" />
-            <div class="ham-menu">
-              <div class="menuline"></div>
-            </div>
-            
-            <ul class="menulist">
-              <li><a href="../Pages/about.html">About</a></li>
-              <li><a href="../Pages/menu.html">Menu</a></li>
-              <li><a href="../Pages/catering.html">Catering</a></li>
-              <li><a href="../Pages/photos.html">Photos</a></li>
-            </ul>
-          </nav>
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/MuzzlesLogo.png"  alt="Muzzles Logo!">
+        </a>
+
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#toggleMobileMenu"
+        aria-controls="toggleMobileMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="toggleMobileMenu">
+          <ul class="corinnav navbar ms-auto text-center">
+            <li>
+              <a class="nav-link corinnav ml-4" href="./pages/about.html">About</a>
+            </li>
+            <li>
+              <a class="nav-link corinnav ml-4" href="./pages/menu.html">Menu</a>
+            </li>
+            <li>
+              <a class="nav-link corinnav ml-4" href="./pages/catering.html">Catering</a>
+            </li>
+            <li>
+              <a class="nav-link corinnav ml-4" href="./pages/photo.html">Photo</a>
+            </li>
+          </ul>
         </div>
-      
-      </div>
+      </nav>
     </div>
+
     <!-- Navbar -->
 
     <!-- Hero img -->
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0 ">
       <img
         src="/assets/homeHero.jpg"
         class="home-hero"
